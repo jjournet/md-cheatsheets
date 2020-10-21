@@ -1,0 +1,25 @@
+% tmux
+
+### sessions
+
+# list sessions
+tmux ls
+
+# attach to session id 0 (-d to force detach it if already attached)
+tmux a -d -t 0
+
+# create new session with name sessioname
+tmux new -s sessionname
+
+### windows 
+
+# rename window
+ctrl-b ,
+
+# list all windows
+ctrl-b w
+
+### panes
+
+# convert pane to new window
+ctrl-b !

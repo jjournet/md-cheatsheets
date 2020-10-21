@@ -1,0 +1,7 @@
+% ansible
+
+# list group of servers with the servers
+ansible localhost -m debug -a 'var=groups'
+
+# list only the groups of servers, with the servers
+ansible localhost -m debug -a 'var=groups.keys()'

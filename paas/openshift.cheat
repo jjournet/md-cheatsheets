@@ -1,0 +1,9 @@
+% openshift
+
+# count number of pods per node (3.11)
+oc get pods --all-namespaces -o wide | grep -v -e '^NAME' | awk '{print $8}' | sort | uniq -c
+
+# count nodes with label 'failure-domain.beta.kubernetes.io/region=nova' (3.11)
+oc get nodes -l failure-domain.beta.kubernetes.io/region=nova | wc -l
+
+

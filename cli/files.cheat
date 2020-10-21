@@ -1,0 +1,6 @@
+% cli, files
+
+### Find on the system
+
+# find the top 10 largest files in Linux system
+find / -type f -exec du -Sh {} + | sort -rh | head -n 10
