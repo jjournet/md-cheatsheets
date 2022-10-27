@@ -1,0 +1,22 @@
+% brew
+
+# Upgrade
+brew upgrade
+
+# clean-up
+brew cleanup
+
+# list all
+brew list
+
+# brew list leaves (not dependencies of others)
+brew leaves
+
+# list explicitly installed packages
+brew dump list
+
+# uninstall package
+brew remove <package_name>
+
+# info on package
+brew info <package_name>

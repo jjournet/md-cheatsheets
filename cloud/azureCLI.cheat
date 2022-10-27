@@ -1,0 +1,12 @@
+% Azure CLI
+
+# Select the subscription to work with mysub
+az account set --subscription <mysub>
+
+# List VMs in ressource group Rg
+az vm list -g <Rg> --query "[].id" -o tsv
+
+# start/stop/deallocate machine
+az vm <vmaction> -g <Rg> -n <vmname>
+
+$ vmaction: echo "start stop deallocate" | tr ' ' '\n'

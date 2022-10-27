@@ -1,0 +1,7 @@
+% kubectl
+
+# set default namespace for context
+kubectl config set-context --current --namespace=<namespace_name>
+
+# check service account access
+kubectl auth can-i <verb> <resource> --as=system:serviceaccount:<namespace>:<serviceaccountname> [-n <namespace>]

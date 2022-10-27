@@ -9,7 +9,13 @@ tmux ls
 tmux a -d -t 0
 
 # create new session with name sessioname
-tmux new -s sessionname
+tmux new -s <sessionname>
+
+# detach from session
+ctrl-b d
+
+# kill session <sesname>
+tmux kill-session -t <sesname>
 
 ### windows 
 
@@ -19,7 +25,16 @@ ctrl-b ,
 # list all windows
 ctrl-b w
 
+# renumber windows (gapless)
+ctrl-b :move-window -r
+
 ### panes
 
 # convert pane to new window
 ctrl-b !
+
+# cycle current pane up
+ctrl-b ctrl-o
+
+# synchronize (send command to) all panes
+Ctrl-B :setw synchronize-panes on

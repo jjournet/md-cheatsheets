@@ -1,0 +1,6 @@
+% rhel
+
+### update/upgrade
+
+# check if reboot required (part of yum-utils)
+needs-restarting  -r

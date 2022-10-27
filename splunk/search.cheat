@@ -1,0 +1,4 @@
+% Splunk search commands
+
+# list all indexes and source types with their last entries
+| tstats earliest(_time) AS _time where index=* OR index=_* by index, sourcetype

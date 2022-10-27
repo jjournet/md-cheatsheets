@@ -1,0 +1,6 @@
+# create virtualenv  with python3
+virtualenv -p python3 <env_name>
+
+# create venv with python3
+python3 -m venv /path/to/new/virtual/environment
+

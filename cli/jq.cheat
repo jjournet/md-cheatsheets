@@ -1,0 +1,4 @@
+% jq
+
+# extract field if another field match
+cat events.json | jq '.[] | select(.type=="PushEvent") | {type:.type, commits:(.payload.commits|length)}'

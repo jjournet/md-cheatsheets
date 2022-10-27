@@ -5,3 +5,6 @@ ansible localhost -m debug -a 'var=groups'
 
 # list only the groups of servers, with the servers
 ansible localhost -m debug -a 'var=groups.keys()'
+
+# get facts using module
+ansible all -m setup -a "filter=lsb" -i inventories/all_hpc_hosts

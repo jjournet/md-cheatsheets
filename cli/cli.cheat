@@ -1,0 +1,11 @@
+# display history with timestamp
+HISTTIMEFORMAT="%d/%m/%y %T " history
+
+# display N-th field
+awk '{print $<N>}'
+
+# remove empty lines
+sed '/^[[:space:]]*$/d'
+
+# delete lines from 5 through 10 and line 12th:
+sed -i '5,10d;12d' file
